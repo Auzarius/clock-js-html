@@ -1,0 +1,29 @@
+{
+  "name": "html-time",
+  "version": "1.0.0",
+  "description": "displays the time on a web page",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "moment",
+    "html",
+    "css",
+    "css-animation",
+    "gulp",
+    "js",
+    "jquery",
+    "bootstrap"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^3.2.0"
+  },
+  "dependencies": {
+    "graceful-fs": "^4.1.3",
+    "lodash": "^4.6.1"
+  }
+}
