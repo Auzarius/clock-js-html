@@ -18,10 +18,22 @@ div {
 }
 
 .scoreboard {
-	font-family: scoreBoard;
+	
 }
 
-h1 {
+#date {
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #f35626;
+	background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
+    padding: 0;
+    margin: 0;
+}
+
+#clock {
+	font-family: scoreBoard;
 	font-size: 240px;
 	color: #404040;
 	background-color: #30C7FF;
@@ -43,37 +55,61 @@ h1 {
 }
 
 @media screen and (max-width: 269px) {
-	h1 {
+	#clock {
 		font-size: 60px;
+	}
+	
+	#date {
+		font-size: 35px;
 	}
 }
 
 @media screen and (min-width: 270px) and (max-width: 404px) {
-	h1 {
+	#clock {
 		font-size: 80px;
+	}
+	
+	#date {
+		font-size: 30px;
 	}
 }
 
 @media screen and (min-width: 405px) and (max-width: 536px) {
-	h1 {
+	#clock {
 		font-size: 120px;
+	}
+	
+	#date {
+		font-size: 45px;
 	}
 }
 
 @media screen and (min-width: 537px) and (max-width: 668px) {
-	h1 {
+	#clock {
 		font-size: 160px;
+	}
+	
+	#date {
+		font-size: 60px;
 	}
 }
 
 @media screen and (min-width: 669px) and (max-width: 795px) {
-	h1 {
+	#clock {
 		font-size: 200px;
+	}
+	
+	#date {
+		font-size: 75px;
 	}
 }
 
 @media screen and (min-width: 796px) {
-	h1 {
+	#clock {
 		font-size: 240px;
+	}
+	
+	#date {
+		font-size: 90px;
 	}
 }

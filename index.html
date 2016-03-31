@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- CSS  -->
 	<link rel="stylesheet" href="lib/css/bootswatch.paper.min.css" />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="dist/css/font.css" />
 	<script src="lib/js/moment.min.js"></script>
 	<!-- jquery and bootstrap -->
@@ -15,7 +16,8 @@
 	<script src="lib/js/bootstrap.min.js" async></script>
 </head>
 <body class="container">
-	<div class="scoreboard text-center">
+	<div class="text-center">
+		<h1 id="date"></h1>
 		<h1 id="clock"></h1>
 	</div>
 
@@ -26,10 +28,17 @@
 			$('#clock').html(time);
 			setTimeout(displayTime, 1000);
 		}
+		
+		function displayDate() {
+			var date = moment().format('dddd, MMMM Do YYYY');
+			$('#date').html(date);
+			setTimeout(displayDate, 3600000);
+		}
 	</script>
 	<script>
 		$(document).ready(function() {
 			displayTime();
+			displayDate();
 		});
 	</script>
 </body>
