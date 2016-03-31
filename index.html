@@ -23,12 +23,18 @@
 
 	<!-- clock -->
 	<script>
+		// Set the time and format using Moment JS
+		// setTimeout will repeat the function on the interval
+		// 1000 = 1 second
 		function displayTime() {
 			var time = moment().format('hh:mm:ss');
 			$('#clock').html(time);
 			setTimeout(displayTime, 1000);
 		}
 		
+		// Set the date and format using Moment JS
+		// setTimeout will repeat the function on the interval
+		// 3600000 = 1 hour
 		function displayDate() {
 			var date = moment().format('dddd, MMMM Do YYYY');
 			$('#date').html(date);
@@ -36,6 +42,7 @@
 		}
 	</script>
 	<script>
+		// calls the functions once the webpage has been loaded
 		$(document).ready(function() {
 			displayTime();
 			displayDate();

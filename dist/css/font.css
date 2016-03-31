@@ -17,17 +17,15 @@ div {
 	transform: translate(-50%, -50%);
 }
 
-.scoreboard {
-	
-}
-
 #date {
 	font-family: 'Open Sans Condensed', sans-serif;
+	/* From Animate.css */
 	color: #f35626;
 	background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-animation: hue 60s infinite linear;
+    /* END */
     padding: 0;
     margin: 0;
 }
@@ -38,12 +36,15 @@ div {
 	color: #404040;
 	background-color: #30C7FF;
 	padding: 0 5px;
+	/* From Animate.css */
 	background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-animation: hue 60s infinite linear;
+    /* END */
 }
 
+/* From Animate.css */
 @-webkit-keyframes hue {
   from {
     -webkit-filter: hue-rotate(0deg);
@@ -53,6 +54,7 @@ div {
     -webkit-filter: hue-rotate(-360deg);
   }
 }
+/* END */
 
 @media screen and (max-width: 269px) {
 	#clock {
