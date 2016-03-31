@@ -1,0 +1,2 @@
+# HTML Clock
+This is a clock displayed at the center of an HTML page displaying the date and time.  The time is generated and formatted with Moment.js and jQuery is used for some light DOM manipulation.  I also used the color cycling style from Animate.css to alter the hue and give the clock some visual.  
